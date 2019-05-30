@@ -1,0 +1,193 @@
+*
+	box-sizing: border-box
+
+body
+	background: url(../img/bg.jpg) no-repeat top
+	font-family: 'Muller Light'
+	font-size: 14px
+	color: lighten(#757578, 25%)
+a
+	text-decoration: none
+
+
+.header
+	padding: 34px 0px
+	display: flex
+	flex-direction: column
+	justify-content: center
+	align-items: center
+	&-logo
+		width: 120px
+		height: 120px
+	&-title
+		margin-top: 17px
+		font-family: 'Muller Extra Bold'
+		font-size: 24px
+		color: #fff
+	&-subtitle
+		margin-top: 18px
+		br
+			display: none
+.content
+	padding-top: 40px
+	display: flex
+	flex-direction: column
+	justify-content: center
+	align-items: center
+	&-top
+		display: flex
+		justify-content: center
+		align-items: center
+		&__card
+			margin-right: 33px
+			box-shadow: 0 0px 150px 10px rgba(#000, 0.7)
+		&__title
+			margin-top: 10px
+			font-family: 'Muller Extra Bold'
+			font-size: 24px
+			color: #fff
+		&__subtitle
+			margin-top: 18px
+			line-height: 20px
+	&-center
+		padding-top: 40px
+		padding-bottom: 40px
+		display: flex
+		flex-direction: column
+		justify-content: center
+		&__text
+			margin-bottom: 14px
+	&-features
+		padding-top: 10px
+		padding-bottom: 20px
+	 &__block
+	 	display: flex
+	 	align-items: center
+	 	width: 480px
+	 	margin-bottom: 27px
+	 	img
+	 		width: 32px
+	 		height: 32px
+	 		margin-right: 24px
+	 &__text
+	 	span
+	 		font-weight: 900	
+.footer
+	padding-top: 57px
+	padding-bottom: 78px
+	display: flex
+	flex-direction: column
+	align-items: center
+	justify-content: center
+	&-title
+		font-family: 'Muller Bold'
+		font-size: 18px
+		color: #fff
+	&-subtitle
+		margin-top: 10px
+		font-size: 16px
+		color: #ffffff
+	&-social
+		width: 175px
+		margin-top: 15px
+		display: flex
+		justify-content: space-between
+		align-items: center
+		&__link
+			display: flex
+			align-items: center
+			justify-content: center
+			width: 45px
+			height: 45px
+			background-image: linear-gradient(45deg, #caa35a, #f3eab2, #caa35a);
+			border-radius: 50%
+.button
+	margin-top: 33px
+	padding: 23px 57px
+	border: none
+	border-radius: 10px
+	font-family: 'Muller Bold'
+	font-size: 16px
+	background-image: linear-gradient(45deg, #caa35a, #f3eab2, #caa35a);
+	color: #000
+	&:focus
+		outline: none
+	&:hover
+		cursor: pointer
+	
+
+@media (max-width: 576px)
+ body
+ 	font-size: 12px
+	.header
+		padding: 20px 0px
+		&-title
+			text-align: center
+			margin-top: 17px
+			font-family: 'Muller Extra Bold'
+			font-size: 22px
+		&-subtitle
+			text-align: center
+			margin-top: 18px
+			br
+				display: block
+	.content
+		padding-top: 60px
+		&-top
+			flex-direction: column
+			&__card
+				width: 100px
+				height: 60px
+				margin-right: 0px
+				box-shadow: 0 0px 150px 10px rgba(#000, 0.7)
+			&__title
+				text-align: center
+				font-size: 24px
+			&__subtitle
+				width: 100%
+				margin-left: auto
+				margin-right: auto
+				text-align: center
+				margin-top: 10px
+				br
+					display: none
+		&-center
+			padding-top: 20px
+			padding-bottom: 0px
+			&__text
+				width: 90%
+				margin-left: auto
+				margin-right: auto
+				margin-bottom: 12px
+				text-align: center
+				br
+					display: none
+		&-features
+			display: flex
+			flex-direction: column
+			align-items: center
+			justify-content: center
+			padding-top: 25px
+			padding-bottom: 0px
+		 &__block
+		 	width: 90%	
+		 	img
+		 		margin-right: 10px
+.footer
+	padding-top: 30px
+	padding-bottom: 11px
+	text-align: center
+	&-social
+		width: 175px
+		margin-top: 15px
+		display: flex
+		justify-content: space-between
+		align-items: center
+		&__link
+			display: flex
+			align-items: center
+			justify-content: center
+			width: 45px
+			height: 45px
+			background-image: linear-gradient(45deg, #caa35a, #f3eab2, #caa35a);
+			border-radius: 50%
